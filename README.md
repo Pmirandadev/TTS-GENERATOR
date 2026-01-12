@@ -1,3 +1,94 @@
-# Gerador de audio de texto utilizando a biblioteca edge_tts
+# 🚀 TTS_GENERATOR
 
-## Simples e funcional, escreva oque precisa no local indicado e rode o código que o aúdio será feito.
+O **TTS_GENERATOR** é um aplicativo desktop em Python que converte textos em áudio utilizando o mecanismo de síntese de voz do **Edge TTS**, com interface gráfica em **CustomTkinter**.
+
+Ele permite transformar qualquer texto digitado ou carregado de arquivos `.txt` em arquivos `.mp3` de forma simples e rápida.
+
+## ✨ Funcionalidades
+- 📄 Conversão de texto para áudio (.mp3)
+- 🎤 Suporte a vozes em Português Brasil
+- 🎚 Ajuste de velocidade da fala
+- 📁 Importar arquivos `.txt`
+- 🗂 Geração e organização automática dos áudios
+- 🔔 Notificações de conclusão ou erros
+- 🪟 Interface amigável e intuitiva
+- 💾 Abertura automática da pasta de áudios gerados
+- 🖥 Compatível somente com Windows atualmente
+
+## 🔊 Vozes disponíveis
+- pt-BR-AntonioNeural (Masculina)
+- pt-BR-FranciscaNeural (Feminina)
+- pt-BR-ThalitaMultilingualNeural (Feminina Multilíngue)
+
+## 📦 Como usar
+1. Abra o aplicativo
+2. Digite ou importe um texto `.txt`
+3. Escolha uma voz
+4. Ajuste a velocidade (opcional)
+5. Clique em **Gerar Áudio**
+6. O arquivo será salvo na pasta `audios/`
+
+## 📁 Estrutura dos arquivos gerados
+TTS_GENERATOR/
+ ├── Gerador.exe
+ ├── audios/
+ │    ├── audio_1739894923.mp3
+ │    └── ...
+ └── ...
+
+## 🛠 Tecnologias utilizadas
+- Python 3.11
+- CustomTkinter
+- Edge TTS API
+- PyInstaller (Build)
+- Inno Setup (Instalador)
+
+## 🔧 Para desenvolvedores
+Clone o repositório:
+git clone https://github.com/<usuario>/TTS_GENERATOR.git
+
+Instale as dependências:
+pip install -r requirements.txt
+
+Execute:
+python src/Gerador.py
+
+## 🏗 Build do executável
+Para gerar o executável:
+pyinstaller --onefile --noconsole --icon="TTS_GENERATOR.ico" Gerador.py
+
+O instalador pode ser gerado utilizando Inno Setup.
+
+## 📦 Download para usuários finais
+Baixe a última versão compilada em:
+➡ Instalador_TTS_GENERATOR → Instalador_GeradorVoz.exe
+
+## 📂 Estrutura
+TTS_GENERATOR/
+ ├── Gerador.py
+ ├── TTS_GENERATOR.ico
+ ├── Gerador.spec
+ ├── Instalador_TTS_GENERATOR/
+ │    └── TTS_GENERATOR_Setup.exe
+ ├── audios/
+ ├── dist/
+ │    └── audios/
+ │    └── Gerador.exe
+ ├── requirements.txt
+ ├── README.md
+ └── LICENSE
+
+## 🧭 Roadmap
+- [ ] Suporte a mais idiomas
+- [ ] Player interno de áudio
+- [ ] Exportar para WAV
+- [ ] Histórico de textos
+- [ ] Atualizador automático
+- [ ] Versão Linux
+
+## 👨‍💻 Autor
+**Pmirandadev**
+
+## 📜 Licença
+Este projeto pode ser licenciado sob a **MIT License**.  
+Sinta-se à vontade para contribuir ou utilizar para fins pessoais e profissionais.
