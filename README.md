@@ -37,7 +37,7 @@ Ele permite transformar qualquer texto digitado ou carregado de arquivos `.txt` 
 
 ## 🔧 Para desenvolvedores
 Clone o repositório:
-git clone https://github.com/<usuario>/TTS_GENERATOR.git
+git clone https://github.com/Pmirandadev/TTS_GENERATOR.git
 
 Instale as dependências:
 pip install -r requirements.txt
