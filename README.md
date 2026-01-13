@@ -35,25 +35,15 @@ Ele permite transformar qualquer texto digitado ou carregado de arquivos `.txt` 
 - PyInstaller (Build)
 - Inno Setup (Instalador)
 
-## 🔧 Para desenvolvedores
-Clone o repositório:
-git clone https://github.com/Pmirandadev/TTS_GENERATOR.git
-
 Instale as dependências:
 pip install -r requirements.txt
 
 Execute:
 python src/Gerador.py
 
-## 🏗 Build do executável
-Para gerar o executável:
-pyinstaller --onefile --noconsole --icon="TTS_GENERATOR.ico" Gerador.py
-
-O instalador pode ser gerado utilizando Inno Setup.
-
 ## 📦 Download para usuários finais
 Baixe a última versão compilada em:
-➡ Instalador_TTS_GENERATOR → Instalador_GeradorVoz.exe
+➡ Release → Instalador_GeradorVoz.exe
 
 ## 📂 Estrutura
 TTS_GENERATOR/ </br>
