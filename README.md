@@ -28,14 +28,6 @@ Ele permite transformar qualquer texto digitado ou carregado de arquivos `.txt` 
 5. Clique em **Gerar Áudio**
 6. O arquivo será salvo na pasta `audios/`
 
-## 📁 Estrutura dos arquivos gerados
-TTS_GENERATOR/
- ├── Gerador.exe
- ├── audios/
- │    ├── audio_1739894923.mp3
- │    └── ...
- └── ...
-
 ## 🛠 Tecnologias utilizadas
 - Python 3.11
 - CustomTkinter
@@ -64,19 +56,18 @@ Baixe a última versão compilada em:
 ➡ Instalador_TTS_GENERATOR → Instalador_GeradorVoz.exe
 
 ## 📂 Estrutura
-TTS_GENERATOR/
- ├── Gerador.py
- ├── TTS_GENERATOR.ico
- ├── Gerador.spec
- ├── Instalador_TTS_GENERATOR/
- │    └── TTS_GENERATOR_Setup.exe
- ├── audios/
- ├── dist/
- │    └── audios/
- │    └── Gerador.exe
- ├── requirements.txt
- ├── README.md
- └── LICENSE
+TTS_GENERATOR/ </br>
+ ├── src/</br>
+ │    └── Gerador.py</br>
+ ├── installer/</br>
+ │    └── Gerador.spec</br>
+ │    └── setup.iss</br>
+ ├── icons/</br>
+ │    └── TTS_GENERATOR.ico</br>
+ ├── audios/</br>
+ ├── requirements.txt</br>
+ ├── README.md</br>
+ └── LICENSE</br>
 
 ## 🧭 Roadmap
 - [ ] Suporte a mais idiomas
@@ -91,4 +82,3 @@ TTS_GENERATOR/
 
 ## 📜 Licença
 Este projeto pode ser licenciado sob a **MIT License**.  
-Sinta-se à vontade para contribuir ou utilizar para fins pessoais e profissionais.
